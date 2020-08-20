@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/padmanabhswami_temple"
+        android:layout_weight="1"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Padmanabhswami Temple"
+            android:textAlignment="center"
+            android:textColor="#29090b"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/heading"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address :"
+            android:layout_below="@id/heading"
+            android:id="@+id/address"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="West Nada, Fort, East Fort, Pazhavangadi, Thiruvananthapuram, Kerala 695023"
+            android:layout_below="@id/address"
+            android:id="@+id/address2"
+            android:layout_weight="1"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address2"
+            android:id="@+id/timing"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temple-Timing : "
+            android:layout_below="@id/address2"
+            android:id="@+id/time1"
+            android:textSize="18sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 3:30 AM to 12:00 NOON"
+            android:id="@+id/time2"
+            android:textSize="18sp"
+            />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About :"
+            android:layout_below="@id/timing"
+            android:id="@+id/about1"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutdetails"
+            android:layout_below="@id/about1"
+            android:id="@+id/about2"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="http://ananthapuratemple.com/"
+            android:layout_below="@id/about2"
+            android:id="@+id/weblink"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+</LinearLayout>
