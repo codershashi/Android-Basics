@@ -16,11 +16,11 @@
         tools:context=".MainActivity">
 
         <EditText
-            android:id="@+id/album_description_view"
+            android:id="@+id/name_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Fill Your Name Here"
-            android:inputType="text" />
+            android:inputType="textCapWords" />
 
         <TextView
             android:layout_width="wrap_content"
