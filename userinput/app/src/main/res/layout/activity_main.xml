@@ -82,23 +82,7 @@
                     android:text="+"
                     android:onClick="increment" />
         </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Order Summary"
-            android:textAllCaps="true"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            />
-        <TextView
-            android:id="@+id/order_summary_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="$0"
-            android:textSize="16sp"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black"
-            />
+        
         <Button
             android:layout_marginTop="16dp"
             android:layout_height="wrap_content"
