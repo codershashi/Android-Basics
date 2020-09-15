@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 package com.example.android.miwok;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -35,6 +36,20 @@ public class MainActivity extends AppCompatActivity {
     public void openNumbersList(View view){
         Intent i = new Intent(this, NumbersActivity.class);
         startActivity(i);
+    }
 
+    public void openFamilyList(View view){
+        Intent i = new Intent(this, FamilyActivity.class);
+        startActivity(i);
+    }
+
+    public void openColorsList(View view){
+        Intent i = new Intent(this, ColorsActivity.class);
+        startActivity(i);
+    }
+
+    public void openPhrasesList(View view){
+        Intent i = new Intent(this, PhrasesActivity.class);
+        startActivity(i);
     }
 }
